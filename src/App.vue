@@ -8,7 +8,7 @@ var dropDown = ref(false);
 </script>
 
 <template>
-  <header class="overflow-hidden w-full text-center p-6 h-[75px]">
+  <header class="overflow-hidden w-full text-center p-6 h-[75px] border-b">
     <div> 
       <!-- bg-[#2e2e2e] -->
       <RouterLink to="/" class="link-animate">خانه</RouterLink>
@@ -39,7 +39,6 @@ body {
 Header a {
   font-size: 1.4rem;
 }
-
 .dropdown-content {
   display: none;
   position: absolute;
@@ -47,6 +46,8 @@ Header a {
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 .dropdown-content a {
@@ -60,4 +61,16 @@ Header a {
 
 .dropdownActive {
   display: block;
-}</style>
+  opacity: 1;
+  animation: fadeIn 0.3s ease;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+</style>
