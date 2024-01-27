@@ -4,7 +4,11 @@ import formsPlugin from '@tailwindcss/forms'
 export default {
   content: ['./index.html', './src/**/*.{vue,js}'],
   theme: {
-    extend: {}
+    extend: {
+      textColor:{
+        primary: "#42b883"
+      }
+    }
   },
   plugins: [formsPlugin]
 }

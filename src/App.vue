@@ -14,10 +14,10 @@ var dropDown = ref(false);
       <RouterLink to="/" class="link-animate">خانه</RouterLink>
       <div class="inline-block dropdown">
         <a class="mr-8 ml-8 hover:cursor-pointer" to="/" v-on:click="dropDown = !dropDown"> + استدلال ها</a>
-        <div class="dropdown-content" :class="{ dropdownActive: dropDown == true }" >
-          <RouterLink v-on:click="dropDown = !dropDown" to="general">عمومی</RouterLink>
-          <RouterLink v-on:click="dropDown = !dropDown" to="health">تغذیه</RouterLink>
-          <RouterLink v-on:click="dropDown = !dropDown" to="environment">محیط زیست</RouterLink>
+        <div class="dropdown-content rounded-2xl" :class="{ dropdownActive: dropDown == true }" >
+          <RouterLink class="hover:text-primary" v-on:click="dropDown = !dropDown" to="general">عمومی</RouterLink>
+          <RouterLink class="hover:text-primary" v-on:click="dropDown = !dropDown" to="health">تغذیه</RouterLink>
+          <RouterLink class="hover:text-primary" v-on:click="dropDown = !dropDown" to="environment">محیط زیست</RouterLink>
         </div>
       </div>
       <RouterLink to="About" class="link-animate">درباره ما</RouterLink>
@@ -58,7 +58,6 @@ Header a {
   display: block;
   text-align: right;
 }
-
 .dropdownActive {
   display: block;
   opacity: 1;
