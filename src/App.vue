@@ -8,12 +8,12 @@ var dropDown = ref(false);
 </script>
 
 <template>
-  <header class="overflow-hidden w-full text-center p-6 h-[75px] border-b">
+  <header class="overflow-hidden w-full text-center p-6 h-[75px]">
     <div> 
       <!-- bg-[#2e2e2e] -->
       <RouterLink to="/" class="link-animate">خانه</RouterLink>
       <div class="inline-block dropdown">
-        <a class="mr-8 ml-8 hover:cursor-pointer" to="/" v-on:click="dropDown = !dropDown"> + استدلال ها</a>
+        <a class="mr-8 ml-8 hover:cursor-pointer select-none" to="/" v-on:click="dropDown = !dropDown"> + استدلال ها</a>
         <div class="dropdown-content rounded-2xl" :class="{ dropdownActive: dropDown == true }" >
           <RouterLink class="hover:text-primary" v-on:click="dropDown = !dropDown" to="general">عمومی</RouterLink>
           <RouterLink class="hover:text-primary" v-on:click="dropDown = !dropDown" to="health">تغذیه</RouterLink>
@@ -63,6 +63,19 @@ Header a {
   opacity: 1;
   animation: fadeIn 0.3s ease;
 }
+
+.router-link-exact-active::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #42b883;
+  transform: scaleX(1);
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;

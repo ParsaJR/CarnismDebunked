@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import AboutView from '../views/AboutView.vue'
-import GetStartedView from '../views/GetStartedView.vue'
+import GeneralView from '../views/GeneralView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -12,9 +12,9 @@ const router = createRouter({
       component: HomeView
     },
     {
-      path: '/Get-Started',
-      name: "Get-Started",
-      component: GetStartedView
+      path: '/general',
+      name: 'General',
+      component: GeneralView
     },
     {
       path: '/about',

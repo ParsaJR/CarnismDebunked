@@ -5,9 +5,9 @@ export default {
   content: ['./index.html', './src/**/*.{vue,js}'],
   theme: {
     extend: {
-      textColor:{
-        primary: "#42b883"
-      }
+      textColor: {
+        primary: '#42b883'
+      },
     }
   },
   plugins: [formsPlugin]
