@@ -9,7 +9,7 @@ var dropDown = ref(false);
 
 <template>
   <header class="overflow-hidden w-full text-center p-6 h-[75px]">
-    <div> 
+    <div class="header-items"> 
       <!-- bg-[#2e2e2e] -->
       <RouterLink to="/" class="link-animate">خانه</RouterLink>
       <div class="inline-block dropdown">
@@ -64,17 +64,7 @@ Header a {
   animation: fadeIn 0.3s ease;
 }
 
-.router-link-exact-active::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 3px;
-  bottom: 0;
-  left: 0;
-  background-color: #42b883;
-  transform: scaleX(1);
-}
+
 
 @keyframes fadeIn {
   from {
