@@ -1,9 +1,11 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import { ref } from 'vue';
+import { ref , computed } from 'vue';
 var dropDown = ref(false);
 
-
+const dropdownClass = computed(() => {
+  return dropDown.value ? 'dropdownActive' : '';
+});
 
 </script>
 
@@ -14,7 +16,7 @@ var dropDown = ref(false);
       <RouterLink to="/" class="link-animate">خانه</RouterLink>
       <div class="inline-block dropdown">
         <a class="mr-8 ml-8 hover:cursor-pointer select-none" to="/" v-on:click="dropDown = !dropDown"> + استدلال ها</a>
-        <div class="dropdown-content rounded-2xl" :class="{ dropdownActive: dropDown == true }" >
+        <div class="dropdown-content rounded-2xl" :class="dropdownClass" >
           <RouterLink class="hover:text-primary" v-on:click="dropDown = !dropDown" to="general">عمومی</RouterLink>
           <RouterLink class="hover:text-primary" v-on:click="dropDown = !dropDown" to="health">تغذیه</RouterLink>
           <RouterLink class="hover:text-primary" v-on:click="dropDown = !dropDown" to="environment">محیط زیست</RouterLink>
@@ -47,7 +49,6 @@ Header a {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   opacity: 0;
-  transition: opacity 0.3s ease;
 }
 
 .dropdown-content a {
@@ -61,9 +62,8 @@ Header a {
 .dropdownActive {
   display: block;
   opacity: 1;
-  animation: fadeIn 0.3s ease;
+  animation: fadeIn 0.2s ease;
 }
-
 
 
 @keyframes fadeIn {
