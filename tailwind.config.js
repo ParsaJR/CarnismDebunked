@@ -8,6 +8,9 @@ export default {
       textColor: {
         primary: '#42b883'
       },
+      backgroundColor: {
+        section: '#6c757d'
+      }
     }
   },
   plugins: [formsPlugin]
