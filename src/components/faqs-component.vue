@@ -1,5 +1,5 @@
 <script setup>
-
+// make this data dynamic with v-for and json data injection
 </script>
 
 <template>
