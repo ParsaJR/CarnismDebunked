@@ -25,7 +25,7 @@ const dropdownClass = computed(() => {
       <RouterLink to="About" class="link-animate">درباره ما</RouterLink>
     </div>
   </header>
-  <main class="h-[calc(100vh-75px)] overflow-y-auto">
+  <main class="h-[calc(100vh-75px)]">
     <RouterView />
   </main>
   
@@ -48,7 +48,7 @@ Header a {
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
-  opacity: 0;
+  opacity: 0; 
 }
 
 .dropdown-content a {
