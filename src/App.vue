@@ -26,7 +26,7 @@ const dropdownClass = computed(() => {
     </div>
   </header>
   <main class="h-[calc(100vh-75px)]">
-    <RouterView />
+      <RouterView />
   </main>
   
 
