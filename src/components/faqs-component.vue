@@ -1,19 +1,19 @@
 <script setup>
 import { computed, ref } from 'vue';
-const generalFaqs = defineProps(['data']);
+const Faqs = defineProps(['data']);
 const searchQuery = ref('');
 
 // Computed property to filter FAQs based on the search query
 const filteredFaqs = computed(() => {
-  const query = searchQuery.value.toLowerCase().trim();
+    const query = searchQuery.value.toLowerCase().trim();
 
-  if (!query) {
-    return generalFaqs.data;
-  }
+    if (!query) {
+        return Faqs.data;
+    }
 
-  return generalFaqs.data.filter((faq) =>
-    faq.question.toLowerCase().includes(query)
-  );
+    return Faqs.data.filter((faq) =>
+        faq.question.toLowerCase().includes(query)
+    );
 });
 
 
