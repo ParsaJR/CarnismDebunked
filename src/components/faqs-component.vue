@@ -1,12 +1,31 @@
 <script setup>
-const generalFaqs = defineProps(['data'])
+import { computed, ref } from 'vue';
+const generalFaqs = defineProps(['data']);
+const searchQuery = ref('');
+
+// Computed property to filter FAQs based on the search query
+const filteredFaqs = computed(() => {
+  const query = searchQuery.value.toLowerCase().trim();
+
+  if (!query) {
+    return generalFaqs.data;
+  }
+
+  return generalFaqs.data.filter((faq) =>
+    faq.question.toLowerCase().includes(query)
+  );
+});
+
+
+
+
 </script>
 
 <template>
     <section class="pt-10 flex gap-y-8 flex-col p-2">
         <div class="relative">
             <label for="Search" class="sr-only"> Search for... </label>
-            <input type="text" id="Search" placeholder="جستجو"
+            <input type="text" id="Search" placeholder="جستجو" v-model="searchQuery"
                 class="w-full rounded-md py-2.5 pe-10 shadow-sm border-gray-700 bg-gray-800 text-white sm:text-sm" />
 
             <span class="absolute inset-y-0 end-0 grid w-10 place-content-center">
@@ -21,7 +40,7 @@ const generalFaqs = defineProps(['data'])
                 </button>
             </span>
         </div>
-        <div class="space-y-4" v-for="faq in generalFaqs.data" :key="faq.id">
+        <div class="space-y-4" v-for="faq in filteredFaqs" :key="faq.id">
             <details class="group [&_summary::-webkit-details-marker]:hidden">
                 <summary class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-green-800 p-4">
                     <h3 class="font-medium">{{ faq.question }}</h3>
