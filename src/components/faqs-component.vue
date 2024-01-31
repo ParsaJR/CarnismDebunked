@@ -25,7 +25,7 @@ const filteredFaqs = computed(() => {
     <section class="pt-10 flex gap-y-8 flex-col p-2">
         <div class="relative">
             <label for="Search" class="sr-only"> Search for... </label>
-            <input type="text" id="Search" placeholder="جستجو" v-model="searchQuery"
+            <input type="text" id="Search" placeholder="جستجو سوال" v-model="searchQuery"
                 class="w-full rounded-md py-2.5 pe-10 shadow-sm border-gray-700 bg-gray-800 text-white sm:text-sm" />
 
             <span class="absolute inset-y-0 end-0 grid w-10 place-content-center">
