@@ -14,7 +14,7 @@
       </h1>
 
       <p class="mx-auto mt-4 max-w-xl sm:text-xl/relaxed">
-        سلاخی انسانی استدلال ها علیه گیاه خواری
+        سلاخیِ انسانی استدلال ها علیه گیاه خواری
       </p>
 
       <div class="mt-8 flex flex-wrap justify-center gap-4">
@@ -29,7 +29,7 @@
           class="block w-full rounded border border-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto transition"
           href="/about"
         >
-          منظورت چیه؟
+          درباره ما
         </a>
       </div>
     </div>
