@@ -40,7 +40,7 @@ const filteredFaqs = computed(() => {
                 </button>
             </span>
         </div>
-        <div class="space-y-4" v-for="faq in filteredFaqs" :key="faq.id">
+        <div class="space-y-4" v-for="faq in filteredFaqs" :key="faq.question">
             <details class="group [&_summary::-webkit-details-marker]:hidden">
                 <summary class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-green-800 p-4">
                     <h3 class="font-medium">{{ faq.question }}</h3>
