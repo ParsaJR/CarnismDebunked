@@ -49,7 +49,7 @@ html.rtl {
   left: 0;
   background-color: #42b883;
   transform: scaleX(0);
-  transition: transform 0.2s ease;
+  transition: transform 0.3s ease;
 }
 .link-animate:hover::before {
   transform: scaleX(1);
