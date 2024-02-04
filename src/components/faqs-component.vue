@@ -56,16 +56,16 @@ const filteredFaqs = computed(() => {
 </template>
 
 <style scoped>
-p :deep a {
-  text-decoration: none;
-  box-shadow: inset 0 -2px 0 #42b883, 0 2px 0 #42b883;
-  transition: box-shadow .3s;
-  color: inherit;
-  overflow: hidden;
-  font-weight: bold;
+p :deep(a) {
+    text-decoration: none;
+    box-shadow: inset 0 -2px 0 #42b883, 0 2px 0 #42b883;
+    transition: box-shadow .3s;
+    color: inherit;
+    overflow: hidden;
+    font-weight: bold;
 }
 
-p :deep a:hover {
-  box-shadow: inset 0 -30px 0 #42b883, 0 2px 0 #42b883;
+p :deep(a:hover) {
+    box-shadow: inset 0 -30px 0 #42b883, 0 2px 0 #42b883;
 }
 </style>
