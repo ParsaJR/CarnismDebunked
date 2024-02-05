@@ -1,5 +1,7 @@
 <script setup>
-import { computed, ref } from 'vue';
+import { computed, onBeforeMount, onMounted, ref } from 'vue';
+import { marked } from 'marked';
+
 const Faqs = defineProps(['data']);
 const searchQuery = ref('');
 
@@ -15,6 +17,30 @@ const filteredFaqs = computed(() => {
         faq.question.toLowerCase().includes(query)
     );
 });
+
+
+
+
+onBeforeMount(() => {
+    async function addRenderedToFilteredFaqs() {
+        filteredFaqs.value.forEach(async (faq) => {
+            try {
+                const response = await fetch('/src/data/' + faq.answerFile);
+                const result = await response.text();
+                faq.renderedAnswer = marked.parse(result);
+            } catch (error) {
+                console.error(error);
+            }
+        });
+    }
+    addRenderedToFilteredFaqs();
+
+})
+
+
+
+
+
 
 </script>
 
@@ -37,7 +63,7 @@ const filteredFaqs = computed(() => {
                 </button>
             </span>
         </div>
-        <div class="space-y-4" v-for="faq in filteredFaqs" :key="faq.question">
+        <div class="space-y-4" v-for="faq in filteredFaqs" :key="faq.id">
             <details class="group [&_summary::-webkit-details-marker]:hidden">
                 <summary class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-green-800 p-4">
                     <h3 class="font-medium select-none">{{ faq.question }}</h3>
@@ -48,7 +74,7 @@ const filteredFaqs = computed(() => {
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                     </svg>
                 </summary>
-                <p class="mt-4 px-4 leading-relaxed" v-html="renderAnswer(faq.AnswerFile)">
+                <p class="mt-4 px-4 leading-relaxed whitespace-pre" v-html="faq.renderedAnswer">
                 </p>
             </details>
         </div>

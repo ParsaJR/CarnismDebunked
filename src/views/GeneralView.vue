@@ -1,7 +1,7 @@
 <script setup >
 import ArgIntro from '@/components/ArgIntro.vue';
 import FaqsComponent from '@/components/faqs-component.vue';
-import generalData from '@/data/general.json'
+import generalData from '@/data/argument/general.json'
 
 </script>
 
