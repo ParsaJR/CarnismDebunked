@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "question": "حیوانات هم در طبیعت  را شکار میکنند !",
+    "answerFile": "answers/answer1.md"
+  },
+  {
+    "id": 2,
+    "question": "چطور ممکنه؟",
+    "answerFile": "answers/answer2.md"
+  }
+]

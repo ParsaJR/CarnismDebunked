@@ -48,7 +48,7 @@ const filteredFaqs = computed(() => {
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                     </svg>
                 </summary>
-                <p class="mt-4 px-4 leading-relaxed" v-html="faq.answer">
+                <p class="mt-4 px-4 leading-relaxed" v-html="renderAnswer(faq.AnswerFile)">
                 </p>
             </details>
         </div>
