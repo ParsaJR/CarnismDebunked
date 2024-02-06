@@ -66,7 +66,7 @@ for (const faq of faqData) {
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                     </svg>
                 </summary>
-                <p class="mt-4 px-4 leading-relaxed whitespace-pre" v-if="faq.renderedAnswer" v-html="faq.renderedAnswer">
+                <p class="mt-4 px-4 leading-relaxed whitespace-pre-wrap" v-if="faq.renderedAnswer" v-html="faq.renderedAnswer">
                 </p>
             </details>
         </div>
