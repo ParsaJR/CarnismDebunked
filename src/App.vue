@@ -7,6 +7,7 @@ const dropdownClass = computed(() => {
   return dropDown.value ? 'dropdownActive' : '';
 });
 
+
 </script>
 
 <template>

@@ -8,8 +8,6 @@ const faqData = Faqs.data;
 const searchQuery = ref('');
 
 
-
-
 // Computed property to filter FAQs based on the search query
 const filteredFaqs = computed(() => {
     const query = searchQuery.value.toLowerCase().trim();
@@ -24,25 +22,15 @@ const filteredFaqs = computed(() => {
 });
 
 
-
-(async () => {
-    for (const faq of filteredFaqs.value) {
-        try {
-            const response = await fetch('/src/data/' + faq.answerFile);
-            const result = await response.text();
-            faq.renderedAnswer = marked.parse(result);
-        } catch (error) {
-            console.error(error);
-        }
+for (const faq of faqData) {
+    try {
+        const response = await fetch('/src/data/' + faq.answerFile);
+        const result = await response.text();
+        faq.renderedAnswer = marked.parse(result);
+    } catch (error) {
+        console.error(error);
     }
-})();
-
-
-
-
-
-
-
+}
 
 
 
@@ -78,8 +66,7 @@ const filteredFaqs = computed(() => {
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                     </svg>
                 </summary>
-                <p class="mt-4 px-4 leading-relaxed whitespace-pre" v-html="faq.renderedAnswer">
-
+                <p class="mt-4 px-4 leading-relaxed whitespace-pre" v-if="faq.renderedAnswer" v-html="faq.renderedAnswer">
                 </p>
             </details>
         </div>
