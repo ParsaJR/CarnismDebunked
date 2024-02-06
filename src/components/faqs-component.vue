@@ -1,41 +1,45 @@
 <script setup>
-import { computed, onBeforeMount, onMounted, ref } from 'vue';
+import { computed, ref } from 'vue';
 import { marked } from 'marked';
 
 const Faqs = defineProps(['data']);
+const faqData = Faqs.data;
+
 const searchQuery = ref('');
+
+
+
 
 // Computed property to filter FAQs based on the search query
 const filteredFaqs = computed(() => {
     const query = searchQuery.value.toLowerCase().trim();
 
     if (!query) {
-        return Faqs.data;
+        return faqData;
     }
 
-    return Faqs.data.filter((faq) =>
+    return faqData.filter((faq) =>
         faq.question.toLowerCase().includes(query)
     );
 });
 
 
 
-
-onBeforeMount(() => {
-    async function addRenderedToFilteredFaqs() {
-        filteredFaqs.value.forEach(async (faq) => {
-            try {
-                const response = await fetch('/src/data/' + faq.answerFile);
-                const result = await response.text();
-                faq.renderedAnswer = marked.parse(result);
-            } catch (error) {
-                console.error(error);
-            }
-        });
+(async () => {
+    for (const faq of filteredFaqs.value) {
+        try {
+            const response = await fetch('/src/data/' + faq.answerFile);
+            const result = await response.text();
+            faq.renderedAnswer = marked.parse(result);
+        } catch (error) {
+            console.error(error);
+        }
     }
-    addRenderedToFilteredFaqs();
+})();
 
-})
+
+
+
 
 
 
@@ -75,6 +79,7 @@ onBeforeMount(() => {
                     </svg>
                 </summary>
                 <p class="mt-4 px-4 leading-relaxed whitespace-pre" v-html="faq.renderedAnswer">
+
                 </p>
             </details>
         </div>
