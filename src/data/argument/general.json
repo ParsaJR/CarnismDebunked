@@ -8,5 +8,10 @@
     "id": 2,
     "question": "انسان ها در راس زنجیره غذایی قرار دارند",
     "answerFile": "answers/answer2.md"
+  },
+  {
+    "id": 3,
+    "question": "میتوانیم حیوانات را به شکل حلال و انسانی سلاخی کنیم",
+    "answerFile": "answers/answer3.md"
   }
 ]
