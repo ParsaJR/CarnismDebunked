@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "question": "حیوانات هم در طبیعت  را شکار میکنند !",
+    "question": "حیوانات هم در طبیعت  را شکار میکنند",
     "answerFile": "answers/answer1.md"
   },
   {
@@ -13,5 +13,40 @@
     "id": 3,
     "question": "میتوانیم حیوانات را به شکل حلال یا انسانی با کمترین درد سلاخی کنیم",
     "answerFile": "answers/answer3.md"
-  }
+  },
+  {
+    "id": 4,
+    "question": "اگر ما گاو و گوسفندها را نخوریم خیلی زود تمام کره‌ی زمین را اشغال می‌کنند",
+    "answerFile": "answers/answer4.md"
+  },
+  {
+    "id": 5,
+    "question": "گیاهان هم درد را احساس می‌کنند و زنده هستند",
+    "answerFile": "answers/answer5.md"
+  },
+  {
+    "id": 6,
+    "question": "اکثریت مردم جهان محصولات حیوانی مصرف میکنند",
+    "answerFile": "answers/answer6.md"
+  },
+  {
+    "id": 7,
+    "question": "گوشت خوشمزه است",
+    "answerFile": "answers/answer7.md"
+  },
+  {
+    "id": 8,
+    "question": "خوردن گوشت حیوانات جزئی از فرهنگ و سنت ما است",
+    "answerFile": "answers/answer8.md"
+  },
+  {
+    "id": 9,
+    "question": "مسائل حقوق بشریِ انسان ها ، اولویت بسیار بالاتری نسبت به حیوانات و محیط زیست دارند",
+    "answerFile": "answers/answer9.md"
+  },
+  {
+    "id": 10,
+    "question": "انسان ها در رأس زنجیره غذایی قرار دارند",
+    "answerFile": "answers/answer10.md"
+  },
 ]
