@@ -20,40 +20,41 @@ onMounted(() => {
 </script>
 
 <template>
-  <header class="overflow-hidden w-full text-center p-6 h-[75px]">
-    <div class="header-items">
-      <!-- bg-[#2e2e2e] -->
-      <RouterLink to="/" class="link-animate">خانه</RouterLink>
-      <div class="inline-block dropdown">
-        <a class="mr-8 ml-8 hover:cursor-pointer select-none" to="/" v-on:click="dropDown = !dropDown"> + استدلال ها</a>
-        <div class="dropdown-content rounded-2xl" :class="dropdownClass">
-          <RouterLink class="hover:text-primary" v-on:click="dropDown = !dropDown" to="general">عمومی</RouterLink>
-          <RouterLink class="hover:text-primary" v-on:click="dropDown = !dropDown" to="health">تغذیه</RouterLink>
-          <RouterLink class="hover:text-primary" v-on:click="dropDown = !dropDown" to="environment">محیط زیست</RouterLink>
+  <div class="flex flex-col min-h-screen">
+    <header class="w-full text-center p-6 sticky z-10">
+      <div class="header-items">
+        <!-- bg-[#2e2e2e] -->
+        <RouterLink to="/" class="link-animate">خانه</RouterLink>
+        <div class="inline-block dropdown">
+          <a class="mr-8 ml-8 hover:cursor-pointer select-none" to="/" v-on:click="dropDown = !dropDown"> + استدلال ها</a>
+          <div class="dropdown-content rounded-2xl" :class="dropdownClass">
+            <RouterLink class="hover:text-primary" v-on:click="dropDown = !dropDown" to="general">عمومی</RouterLink>
+            <RouterLink class="hover:text-primary" v-on:click="dropDown = !dropDown" to="health">تغذیه</RouterLink>
+            <RouterLink class="hover:text-primary" v-on:click="dropDown = !dropDown" to="environment">محیط زیست
+            </RouterLink>
+          </div>
+        </div>
+        <RouterLink to="About" class="link-animate">درباره ما</RouterLink>
+      </div>
+    </header>
+    <main class="flex-grow flex">
+      <RouterView />
+    </main>
+    <footer>
+      <div class="mx-auto max-w-screen-xl px-4 pb-8 sm:px-6 lg:px-8">
+        <div class="mt-16 border-t pt-8 border-gray-800">
+          <div class="text-center flex justify-between">
+            <p>
+             ایده گرفته شده از : <a class="underline" href="https://www.carnismdebunked.com/">carnismdebunked</a>
+            </p>
+            <p dir="ltr">
+              © 2024
+            </p>
+          </div>
         </div>
       </div>
-      <RouterLink to="About" class="link-animate">درباره ما</RouterLink>
-    </div>
-  </header>
-  <main class="h-[calc(100vh-75px)]">
-    <RouterView />
-  </main>
-  <footer>
-    <div class="mx-auto max-w-screen-xl px-4 pb-8 sm:px-6 lg:px-8">
-      <div class="mt-16 border-t pt-8 border-gray-800">
-        <p class="text-center text-xs/relaxed">
-          © Company 2022. All rights reserved.
-
-          <br />
-
-          Created with
-          <a href="#" class="text-gray-700 underline transition hover:text-gray-700/75">Laravel</a>
-          and
-          <a href="#" class="text-gray-700 underline transition hover:text-gray-700/75">Laravel Livewire</a>.
-        </p>
-      </div>
-    </div>
-  </footer>
+    </footer>
+  </div>
 </template>
 
 <style>
