@@ -17,34 +17,25 @@ const handleClickOutside = (event) => {
 onMounted(() => {
   document.addEventListener('click', handleClickOutside)
 })
+
 </script>
 
 <template>
   <div class="flex flex-col min-h-screen">
-    <header class="w-full text-center p-6 sticky z-10 sm:block">
+    <header class="sm:hidden">
+      <h1>salam</h1>
+    </header>
+    <header class="w-full text-center p-6 hidden sm:block">
       <div class="header-items">
         <!-- bg-[#2e2e2e] -->
         <RouterLink to="/" class="link-animate">خانه</RouterLink>
         <div class="inline-block dropdown">
-          <a
-            class="mr-8 ml-8 hover:cursor-pointer select-none"
-            to="/"
-            v-on:click="dropDown = !dropDown"
-          >
-            + استدلال ها</a
-          >
+          <a class="mr-8 ml-8 hover:cursor-pointer select-none" to="/" v-on:click="dropDown = !dropDown">
+            + استدلال ها</a>
           <div class="dropdown-content rounded-2xl" :class="dropdownClass">
-            <RouterLink class="hover:text-primary" v-on:click="dropDown = !dropDown" to="general"
-              >عمومی</RouterLink
-            >
-            <RouterLink class="hover:text-primary" v-on:click="dropDown = !dropDown" to="health"
-              >تغذیه</RouterLink
-            >
-            <RouterLink
-              class="hover:text-primary"
-              v-on:click="dropDown = !dropDown"
-              to="environment"
-              >محیط زیست
+            <RouterLink class="hover:text-primary" v-on:click="dropDown = !dropDown" to="general">عمومی</RouterLink>
+            <RouterLink class="hover:text-primary" v-on:click="dropDown = !dropDown" to="health">تغذیه</RouterLink>
+            <RouterLink class="hover:text-primary" v-on:click="dropDown = !dropDown" to="environment">محیط زیست
             </RouterLink>
           </div>
         </div>
@@ -62,7 +53,7 @@ onMounted(() => {
               ایده گرفته از :
               <a class="underline" href="https://www.carnismdebunked.com/">carnismdebunked</a>
             </p>
-            <p dir="ltr">© 2024</p>
+            <p dir="ltr" id="copyright-year">© {{ new Date().getFullYear() }}</p>
           </div>
         </div>
       </div>
