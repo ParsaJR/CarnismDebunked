@@ -1,53 +1,52 @@
 [
-    {
-      "id": 1,
-      "question": "گیاه خواری ناسالم است",
-      "answer": "answers/general/answer1.md"
-    },
-    {
-      "id": 2,
-      "question": "پروتئین چطور ؟",
-      "answer": "answers/general/answer2.md"
-    },
-     {
-      "id": 3,
-      "question": "کلسیم چطور ؟",
-      "answer": "answers/general/answer3.md"
-    },
-    {
-      "id": 4,
-      "question": "اهن چطور ؟",
-      "answer": "answers/general/answer4.md"
-    },
-    {
-      "id": 5,
-      "question": "ویتامین B12 چطور ؟",
-      "answer": "answers/general/answer5.md"
-    },
-    {
-      "id": 6,
-      "question": "امگا 3 چطور ؟",
-      "answer": "answers/general/answer6.md"
-    },
-      {
-      "id": 7,
-      "question": "ویتامین D چطور؟",
-      "answer": "answers/general/answer7.md"
-    },
-     {
-      "id": 8,
-      "question": "یُد چطور؟",
-      "answer": "answers/general/answer8.md"
-    },
-       {
-      "id": 9,
-      "question": "ایا یک رژیم غذایی گیاهی برای ورزشکاران مناسب است؟",
-      "answer": "answers/general/answer9.md"
-    },
-         {
-      "id": 10,
-      "question": "ایا یک رژیم غذایی گیاهی برای کودکان یا زنان باردار مناسب است؟",
-      "answer": "answers/general/answer10.md"
-    },
-  ]
-  
+  {
+    "id": 1,
+    "question": "گیاه خواری ناسالم است",
+    "answer": "answers/general/answer1.md"
+  },
+  {
+    "id": 2,
+    "question": "پروتئین چطور ؟",
+    "answer": "answers/general/answer2.md"
+  },
+  {
+    "id": 3,
+    "question": "کلسیم چطور ؟",
+    "answer": "answers/general/answer3.md"
+  },
+  {
+    "id": 4,
+    "question": "اهن چطور ؟",
+    "answer": "answers/general/answer4.md"
+  },
+  {
+    "id": 5,
+    "question": "ویتامین B12 چطور ؟",
+    "answer": "answers/general/answer5.md"
+  },
+  {
+    "id": 6,
+    "question": "امگا 3 چطور ؟",
+    "answer": "answers/general/answer6.md"
+  },
+  {
+    "id": 7,
+    "question": "ویتامین D چطور؟",
+    "answer": "answers/general/answer7.md"
+  },
+  {
+    "id": 8,
+    "question": "یُد چطور؟",
+    "answer": "answers/general/answer8.md"
+  },
+  {
+    "id": 9,
+    "question": "ایا یک رژیم غذایی گیاهی برای ورزشکاران مناسب است؟",
+    "answer": "answers/general/answer9.md"
+  },
+  {
+    "id": 10,
+    "question": "ایا یک رژیم غذایی گیاهی برای کودکان یا زنان باردار مناسب است؟",
+    "answer": "answers/general/answer10.md"
+  }
+]

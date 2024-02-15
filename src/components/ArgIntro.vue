@@ -1,5 +1,4 @@
-<script setup>
-</script>
+<script setup></script>
 
 <template>
   <article class="flex gap-y-8 flex-col p-2">
