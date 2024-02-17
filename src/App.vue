@@ -1,30 +1,56 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import { ref, computed, onMounted } from 'vue'
-var dropDown = ref(false)
+var dropDown = ref(false);
 
 const dropdownClass = computed(() => {
   return dropDown.value ? 'dropdownActive' : ''
 })
 
+// close dropdown if user clicked outside of dropdown
 const handleClickOutside = (event) => {
   if (event.target.closest('.dropdown') === null) {
     dropDown.value = false
   }
+}
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
 }
 
 // Add event listener when the component is mounted
 onMounted(() => {
   document.addEventListener('click', handleClickOutside)
 })
-
 </script>
 
 <template>
   <div class="flex flex-col min-h-screen">
-    <header class="sm:hidden">
-      <h1>salam</h1>
+    <!-- Mobile Header -->
+    <header class="sm:hidden flex p-7">
+      <button @click="openNav()" class="flex flex-col justify-center items-center">
+        <svg viewBox="0 0 100 80" width="40" height="40" fill="#dedede">
+          <rect width="100" height="20" rx="8"></rect>
+          <rect y="30" width="100" height="20" rx="8"></rect>
+          <rect y="60" width="100" height="20" rx="8"></rect>
+        </svg>
+        فهرست
+      </button>
+      <!--grey overlay-->
+      <div id="myNav" class="overlay">
+        <a class="closebtn" @click="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
     </header>
+    <!-- Desktop Header -->
     <header class="w-full text-center p-6 hidden sm:block">
       <div class="header-items">
         <!-- bg-[#2e2e2e] -->
@@ -94,7 +120,56 @@ Header a {
   opacity: 1;
   animation: fadeIn 0.2s ease;
 }
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
 
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
 @keyframes fadeIn {
   from {
     opacity: 0;

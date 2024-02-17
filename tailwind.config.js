@@ -10,8 +10,11 @@ export default {
       },
       backgroundColor: {
         section: '#6c757d'
+      },
+      screens: {
+        'xs': '450px'
       }
-    }
+    },
   },
   plugins: [formsPlugin]
 }
