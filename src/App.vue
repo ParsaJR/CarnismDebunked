@@ -41,12 +41,12 @@ onMounted(() => {
       </button>
       <!--grey overlay-->
       <div id="myNav" class="overlay">
-        <a class="closebtn" @click="closeNav()">&times;</a>
+        <a class="closebtn cursor-pointer" @click="closeNav()">&times;</a>
         <div class="overlay-content">
-          <a href="#">About</a>
-          <a href="#">Services</a>
-          <a href="#">Clients</a>
-          <a href="#">Contact</a>
+          <a href="#">لینک اول</a>
+          <a href="#">لینک دوم</a>
+          <a href="#">لینک سوم</a>
+          <a href="#">لینک چهارم</a>
         </div>
       </div>
     </header>
@@ -144,7 +144,6 @@ Header a {
   padding: 8px;
   text-decoration: none;
   font-size: 36px;
-  color: #818181;
   display: block;
   transition: 0.3s;
 }
