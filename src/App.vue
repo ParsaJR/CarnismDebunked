@@ -127,8 +127,7 @@ Header a {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0, 0.9);
+  background-color: #2e2e2e;
   overflow-y: hidden;
   transition: 0.5s;
 }

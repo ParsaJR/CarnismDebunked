@@ -12,7 +12,7 @@ export default {
         section: '#6c757d'
       },
       screens: {
-        'xs': '450px'
+        'xs': '440px'
       }
     },
   },
