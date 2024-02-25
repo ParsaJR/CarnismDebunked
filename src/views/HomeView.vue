@@ -1,4 +1,11 @@
-<script setup></script>
+<script setup>
+import VueWriter from 'vue-writer'
+const Sentences = [
+  'سلاخیِ انسانی استدلال ها علیه گیاه خواری',
+  'اصلاح باورهای غلط برای تقویت گفتمان سازنده',
+  'سوالات متداول درباره گیاه خواری'
+]
+</script>
 
 <template>
   <div class="mx-auto max-w-screen-xl px-4 flex-1 flex items-center">
@@ -10,7 +17,8 @@
       </h1>
 
       <p class="mx-auto mt-4 max-w-xl sm:text-xl/relaxed">
-        سلاخیِ انسانی استدلال ها علیه گیاه خواری
+        <!-- cursor blink animation is not working so i manually addded it ... -->
+        <VueWriter :array="Sentences" :typeSpeed="50" :eraseSpeed="50" :delay="1500" />
       </p>
 
       <div class="mt-8 flex flex-wrap justify-center gap-4">
@@ -31,3 +39,31 @@
     </div>
   </div>
 </template>
+<style lang="scss">
+.cursor {
+  animation:
+    typing 2.5s steps(20, end),
+    blink-caret 0.75s step-end infinite;
+  border-right: 1px solid white;
+}
+/* typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+/* typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+    font-size: 80%;
+  }
+}
+</style>

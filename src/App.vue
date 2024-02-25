@@ -1,7 +1,7 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import { ref, computed, onMounted } from 'vue'
-var dropDown = ref(false);
+var dropDown = ref(false)
 
 const dropdownClass = computed(() => {
   return dropDown.value ? 'dropdownActive' : ''
@@ -14,11 +14,11 @@ const handleClickOutside = (event) => {
   }
 }
 function openNav() {
-  document.getElementById("myNav").style.height = "100%";
+  document.getElementById('myNav').style.height = '100%'
 }
 
 function closeNav() {
-  document.getElementById("myNav").style.height = "0%";
+  document.getElementById('myNav').style.height = '0%'
 }
 
 // Add event listener when the component is mounted
@@ -56,12 +56,25 @@ onMounted(() => {
         <!-- bg-[#2e2e2e] -->
         <RouterLink to="/" class="link-animate">خانه</RouterLink>
         <div class="inline-block dropdown">
-          <a class="mr-8 ml-8 hover:cursor-pointer select-none" to="/" v-on:click="dropDown = !dropDown">
-            + استدلال ها</a>
+          <a
+            class="mr-8 ml-8 hover:cursor-pointer select-none"
+            to="/"
+            v-on:click="dropDown = !dropDown"
+          >
+            + استدلال ها</a
+          >
           <div class="dropdown-content rounded-2xl" :class="dropdownClass">
-            <RouterLink class="hover:text-primary" v-on:click="dropDown = !dropDown" to="general">عمومی</RouterLink>
-            <RouterLink class="hover:text-primary" v-on:click="dropDown = !dropDown" to="health">تغذیه</RouterLink>
-            <RouterLink class="hover:text-primary" v-on:click="dropDown = !dropDown" to="environment">محیط زیست
+            <RouterLink class="hover:text-primary" v-on:click="dropDown = !dropDown" to="general"
+              >عمومی</RouterLink
+            >
+            <RouterLink class="hover:text-primary" v-on:click="dropDown = !dropDown" to="health"
+              >تغذیه</RouterLink
+            >
+            <RouterLink
+              class="hover:text-primary"
+              v-on:click="dropDown = !dropDown"
+              to="environment"
+              >محیط زیست
             </RouterLink>
           </div>
         </div>
@@ -148,7 +161,8 @@ Header a {
   transition: 0.3s;
 }
 
-.overlay a:hover, .overlay a:focus {
+.overlay a:hover,
+.overlay a:focus {
   color: #f1f1f1;
 }
 
@@ -160,12 +174,16 @@ Header a {
 }
 
 @media screen and (max-height: 450px) {
-  .overlay {overflow-y: auto;}
-  .overlay a {font-size: 20px}
+  .overlay {
+    overflow-y: auto;
+  }
+  .overlay a {
+    font-size: 20px;
+  }
   .overlay .closebtn {
-  font-size: 40px;
-  top: 15px;
-  right: 35px;
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
   }
 }
 @keyframes fadeIn {
