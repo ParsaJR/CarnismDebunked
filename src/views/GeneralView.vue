@@ -2,6 +2,8 @@
 import ArgIntro from '@/components/ArgIntro.vue'
 import FaqsComponent from '@/components/faqs-component.vue'
 import generalData from '@/data/argument/general.json'
+import ClipLoader from 'vue-spinner/src/ClipLoader.vue'
+const loaderSize = '75px'
 </script>
 
 <template>
@@ -9,6 +11,9 @@ import generalData from '@/data/argument/general.json'
     <ArgIntro></ArgIntro>
     <Suspense>
       <FaqsComponent :data="generalData"></FaqsComponent>
+      <template #fallback>
+        <ClipLoader class="h-full flex justify-center items-center" :size="loaderSize"></ClipLoader>
+      </template>
     </Suspense>
   </section>
 </template>
