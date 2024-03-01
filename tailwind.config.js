@@ -9,7 +9,8 @@ export default {
         primary: '#42b883'
       },
       backgroundColor: {
-        section: '#6c757d'
+        section: '#6c757d',
+        body: '#19191c'
       },
       screens: {
         'xs': '440px'

@@ -36,7 +36,7 @@ html.rtl {
   color: #dedede;
 }
 body {
-  background-color: #19191c;
+  @apply bg-body;
 }
 
 Header a {

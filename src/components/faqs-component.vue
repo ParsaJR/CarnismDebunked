@@ -1,6 +1,7 @@
 <script setup>
 import { computed, ref } from 'vue'
 import { marked } from 'marked'
+import FaqFooter from './FaqFooter.vue'
 
 const Faqs = defineProps(['data'])
 const faqData = Faqs.data
@@ -93,6 +94,7 @@ for (const faq of faqData) {
       </details>
     </div>
   </section>
+  <FaqFooter class="mt-20"></FaqFooter>
 </template>
 
 <style scoped>
