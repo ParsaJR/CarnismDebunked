@@ -32,7 +32,7 @@ for (const faq of faqData) {
 <template>
   <section class="pt-10 flex gap-y-8 flex-col p-2">
     <div class="relative">
-      <label for="Search" class="sr-only"> Search for... </label>
+      <label for="Search" class="sr-only"> جستجو کنید </label>
       <input
         type="text"
         id="Search"
@@ -43,7 +43,7 @@ for (const faq of faqData) {
 
       <span class="absolute inset-y-0 end-0 grid w-10 place-content-center">
         <button type="button" class="text-gray-400 hover:text-gray-300">
-          <span class="sr-only">Search</span>
+          <span class="sr-only">جستجو</span>
 
           <svg
             xmlns="http://www.w3.org/2000/svg"
