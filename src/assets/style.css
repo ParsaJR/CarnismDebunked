@@ -120,11 +120,11 @@ Header a {
     right: 35px;
   }
 }
-.link-animate {
+.link-underline-animate {
   position: relative;
   text-decoration: none;
 }
-.link-animate::before {
+.link-underline-animate::before {
   content: '';
   position: absolute;
   display: block;
@@ -136,7 +136,7 @@ Header a {
   transform: scaleX(0);
   transition: transform 0.3s ease;
 }
-.link-animate:hover::before {
+.link-underline-animate:hover::before {
   transform: scaleX(1);
 }
 .header-items > .router-link-exact-active::after {

@@ -54,7 +54,7 @@ onMounted(() => {
     <header class="w-full text-center p-6 hidden sm:block">
       <div class="header-items">
         <!-- bg-[#2e2e2e] -->
-        <RouterLink to="/" class="link-animate">خانه</RouterLink>
+        <RouterLink to="/" class="link-underline-animate">خانه</RouterLink>
         <div class="inline-block dropdown">
           <a
             class="mr-8 ml-8 hover:cursor-pointer select-none"
@@ -78,7 +78,7 @@ onMounted(() => {
             </RouterLink>
           </div>
         </div>
-        <RouterLink to="About" class="link-animate">درباره ما</RouterLink>
+        <RouterLink to="About" class="link-underline-animate">درباره ما</RouterLink>
       </div>
     </header>
     <main class="flex-grow flex">
