@@ -35,6 +35,91 @@ html.rtl {
   font-family: 'Vazirmatn', Arial, sans-serif;
   color: #dedede;
 }
+body {
+  background-color: #19191c;
+}
+
+Header a {
+  font-size: 1.4rem;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #414141;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  opacity: 0;
+}
+
+.dropdown-content a {
+  float: none;
+  color: rgb(222, 222, 222);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: right;
+}
+
+.dropdownActive {
+  display: block;
+  opacity: 1;
+  animation: fadeIn 0.2s ease;
+}
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #2e2e2e;
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {
+    overflow-y: auto;
+  }
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
 .link-animate {
   position: relative;
   text-decoration: none;
@@ -64,4 +149,13 @@ html.rtl {
   left: 0;
   background-color: #42b883;
   transform: scaleX(1);
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
