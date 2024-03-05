@@ -39,10 +39,6 @@ body {
   @apply bg-body;
 }
 
-Header a {
-  font-size: 1.4rem;
-}
-
 .dropdown-content {
   display: none;
   position: absolute;
@@ -67,6 +63,7 @@ Header a {
   opacity: 1;
   animation: fadeIn 0.2s ease;
 }
+/* mobile header */
 .overlay {
   height: 0%;
   width: 100%;
@@ -87,12 +84,14 @@ Header a {
   margin-top: 30px;
 }
 
-.overlay a {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 36px;
+.overlay-content > a {
   display: block;
-  transition: 0.3s;
+  padding: 15px;
+}
+.overlay-content a:hover,
+.overlay-content a:focus {
+  text-decoration: underline #42b883;
+  text-decoration-thickness: 3px;
 }
 
 .overlay a:hover,
