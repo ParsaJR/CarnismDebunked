@@ -130,7 +130,7 @@ onMounted(() => {
       <RouterView />
     </main>
     <footer>
-      <div class="mx-auto max-w-screen-xl px-4 pb-8 sm:px-6 lg:px-8">
+      <div class="container py-6 mx-auto">
         <div class="mt-16 border-gray-800">
           <div class="text-center flex justify-between">
             <p>
