@@ -133,10 +133,11 @@ onMounted(() => {
       <div class="container py-6 mx-auto">
         <div class="mt-16 border-gray-800">
           <div class="text-center flex justify-between">
-            <p>
-              ایده گرفته از :
-              <a class="underline" href="https://www.carnismdebunked.com/">carnismdebunked</a>
-            </p>
+            <div>
+              <a href="https://github.com/ParsaJR">
+                <img src="/src/assets/img/github-mark-white.svg" class="hover:invert transition" width="30" height="30">
+              </a>
+            </div>
             <p dir="ltr" id="copyright-year">© {{ new Date().getFullYear() }}</p>
           </div>
         </div>
