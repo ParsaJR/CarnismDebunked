@@ -135,7 +135,12 @@ onMounted(() => {
           <div class="text-center flex justify-between">
             <div>
               <a href="https://github.com/ParsaJR">
-                <img src="/src/assets/img/github-mark-white.svg" class="hover:invert transition" width="30" height="30">
+                <img
+                  src="/src/assets/img/github-mark-white.svg"
+                  class="hover:invert transition"
+                  width="30"
+                  height="30"
+                />
               </a>
             </div>
             <p dir="ltr" id="copyright-year">© {{ new Date().getFullYear() }}</p>

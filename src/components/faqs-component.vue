@@ -39,7 +39,7 @@ for (const faq of faqData) {
         id="Search"
         placeholder="جستجو سوال"
         v-model="searchQuery"
-        class="w-full rounded-md py-2.5 pe-10 shadow-sm border-gray-700 bg-gray-800 text-white sm:text-sm"
+        class="w-full rounded-md py-2.5 px-2.5 pe-10 shadow-sm border-gray-700 bg-gray-800 text-white sm:text-sm"
       />
 
       <span class="absolute inset-y-0 end-0 grid w-10 place-content-center">
