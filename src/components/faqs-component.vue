@@ -2,7 +2,6 @@
 import { computed, ref } from 'vue'
 import { marked } from 'marked'
 import FaqFooter from './FaqFooter.vue'
-
 const Faqs = defineProps(['data'])
 const faqData = Faqs.data
 
