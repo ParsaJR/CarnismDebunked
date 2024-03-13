@@ -13,6 +13,12 @@ h4 {
   @apply text-lg;
 }
 
+@layer base {
+  ul, ol {
+    list-style: revert;
+  }
+}
+
 @tailwind components;
 @tailwind utilities;
 

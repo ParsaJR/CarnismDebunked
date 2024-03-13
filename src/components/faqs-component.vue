@@ -113,4 +113,7 @@ p :deep(a:hover) {
     inset 0 -30px 0 #42b883,
     0 1px 0 #42b883;
 }
+ul {
+  list-style: circle;
+}
 </style>

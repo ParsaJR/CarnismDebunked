@@ -1,52 +1,52 @@
 [
   {
     "id": 1,
-    "question": "گیاه خواری ناسالم است",
-    "answer": "answers/health/answer1.md"
+    "question": "رژیم غذایی گیاهی ناسالم است؟",
+    "answerFile": "answers/health/answer1.md"
   },
   {
     "id": 2,
     "question": "پروتئین چطور ؟",
-    "answer": "answers/health/answer2.md"
+    "answerFile": "answers/health/answer2.md"
   },
   {
     "id": 3,
     "question": "کلسیم چطور ؟",
-    "answer": "answers/health/answer3.md"
+    "answerFile": "answers/health/answer3.md"
   },
   {
     "id": 4,
     "question": "اهن چطور ؟",
-    "answer": "answers/health/answer4.md"
+    "answerFile": "answers/health/answer4.md"
   },
   {
     "id": 5,
     "question": "ویتامین B12 چطور ؟",
-    "answer": "answers/health/answer5.md"
+    "answerFile": "answers/health/answer5.md"
   },
   {
     "id": 6,
     "question": "امگا 3 چطور ؟",
-    "answer": "answers/health/answer6.md"
+    "answerFile": "answers/health/answer6.md"
   },
   {
     "id": 7,
     "question": "ویتامین D چطور؟",
-    "answer": "answers/health/answer7.md"
+    "answerFile": "answers/health/answer7.md"
   },
   {
     "id": 8,
     "question": "یُد چطور؟",
-    "answer": "answers/health/answer8.md"
+    "answerFile": "answers/health/answer8.md"
   },
   {
     "id": 9,
-    "question": "ایا یک رژیم غذایی گیاهی برای ورزشکاران مناسب است؟",
-    "answer": "answers/health/answer9.md"
+    "question": "رژیم غذایی گیاهی برای ورزشکاران مناسب نیست",
+    "answerFile": "answers/health/answer9.md"
   },
   {
     "id": 10,
-    "question": "ایا یک رژیم غذایی گیاهی برای کودکان یا زنان باردار مناسب است؟",
-    "answer": "answers/health/answer10.md"
+    "question": "رژیم غذایی گیاهی برای کودکان یا زنان باردار مناسب نیست",
+    "answerFile": "answers/health/answer10.md"
   }
 ]
