@@ -36,17 +36,7 @@
   },
   {
     "id": 8,
-    "question": "یُد چطور؟",
-    "answerFile": "answers/health/answer8.md"
-  },
-  {
-    "id": 9,
     "question": "رژیم غذایی گیاهی برای ورزشکاران مناسب نیست",
     "answerFile": "answers/health/answer9.md"
   },
-  {
-    "id": 10,
-    "question": "رژیم غذایی گیاهی برای کودکان یا زنان باردار مناسب نیست",
-    "answerFile": "answers/health/answer10.md"
-  }
 ]
