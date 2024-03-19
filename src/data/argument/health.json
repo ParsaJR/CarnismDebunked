@@ -28,15 +28,5 @@
     "id": 6,
     "question": "امگا 3 چطور ؟",
     "answerFile": "answers/health/answer6.md"
-  },
-  {
-    "id": 7,
-    "question": "ویتامین D چطور؟",
-    "answerFile": "answers/health/answer7.md"
-  },
-  {
-    "id": 8,
-    "question": "رژیم غذایی گیاهی برای ورزشکاران مناسب نیست",
-    "answerFile": "answers/health/answer9.md"
-  },
+  }
 ]

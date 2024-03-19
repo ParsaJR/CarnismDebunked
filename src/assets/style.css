@@ -14,7 +14,8 @@ h4 {
 }
 
 @layer base {
-  ul, ol {
+  ul,
+  ol {
     list-style: revert;
   }
 }

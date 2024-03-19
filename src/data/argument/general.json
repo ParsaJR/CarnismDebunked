@@ -41,7 +41,22 @@
   },
   {
     "id": 10,
-    "question": "این چرخه طبیعت است / انسان ها در رأس زنجیره غذایی قرار دارند",
+    "question": "از دامداری محلی تهیه میکنیم",
     "answerFile": "answers/general/answer10.md"
+  },
+  {
+    "id": 11,
+    "question": "خوردن حیوانات قانونی است پس مشکلی ندارد",
+    "answerFile": "answers/general/answer11.md"
+  },
+  {
+    "id": 12,
+    "question": "گیاه خواری تصمیمی افراطی است",
+    "answerFile": "answers/general/answer12.md"
+  },
+  {
+    "id": 13,
+    "question": "از تحمیل عقاید خود به دیگران دست بردارید . شما دیکتاتور هستید",
+    "answerFile": "answers/general/answer13.md"
   }
 ]
