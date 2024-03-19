@@ -73,14 +73,14 @@ onMounted(() => {
           <a class="text-3xl cursor-pointer" @click="mobileDropdown = !mobileDropdown"
             >استدلال ها +</a
           >
-          <ul class="bg-[#414141] p-5" :class="{ hidden: mobileDropdown == false }">
-            <li class="text-2xl my-1">
+          <ul class="bg-[#414141] p-6 list-none" :class="{ hidden: mobileDropdown == false }">
+            <li class="text-2xl my-2">
               <RouterLink to="general" @click="closeNav()">عمومی / اخلاقی</RouterLink>
             </li>
-            <li class="text-2xl my-1">
+            <li class="text-2xl my-2">
               <RouterLink to="health" @click="closeNav()">تغذیه</RouterLink>
             </li>
-            <li class="text-2xl my-1">
+            <li class="text-2xl my-2">
               <RouterLink to="environment" @click="closeNav()">محیط زیست</RouterLink>
             </li>
           </ul>

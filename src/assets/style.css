@@ -45,7 +45,6 @@ html.rtl {
 body {
   @apply bg-body;
 }
-
 .dropdown-content {
   display: none;
   position: absolute;
