@@ -20,7 +20,7 @@ const filteredFaqs = computed(() => {
 
 for (const faq of faqData) {
   try {
-    const response = await fetch('/src/data/' + faq.answerFile)
+    const response = await fetch(faq.answerFile)
     const result = await response.text()
     faq.renderedAnswer = marked.parse(result)
   } catch (error) {

@@ -17,7 +17,7 @@ const Sentences = [
       </h1>
 
       <p class="mx-auto mt-4 max-w-xl sm:text-xl/relaxed">
-        <!-- cursor blink animation is not working so i manually addded it ... -->
+        <!-- cursor blink animation didn't work, so I added it manually ... -->
         <VueWriter :array="Sentences" :typeSpeed="50" :eraseSpeed="50" :delay="1500" />
       </p>
 
