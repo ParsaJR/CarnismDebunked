@@ -1,6 +1,7 @@
 <script setup>
-import { computed, ref } from 'vue'
+import { computed, ref, onMounted } from 'vue'
 import { marked } from 'marked'
+import axios from 'axios'
 import FaqFooter from './FaqFooter.vue'
 const Faqs = defineProps(['data'])
 const faqData = Faqs.data
@@ -18,15 +19,17 @@ const filteredFaqs = computed(() => {
   return faqData.filter((faq) => faq.question.toLowerCase().includes(query))
 })
 
-for (const faq of faqData) {
   try {
-    const response = await fetch(faq.answerFile)
-    const result = await response.text()
-    faq.renderedAnswer = marked.parse(result)
+    const fetchPromises = faqData.map(async (faq) => {
+      const response = await axios.get(faq.answerFile);
+      const result = response.data;
+      faq.renderedAnswer = marked.parse(result);
+    });
+
+    await Promise.all(fetchPromises);
   } catch (error) {
-    console.error(error)
+    console.error(error);
   }
-}
 </script>
 
 <template>

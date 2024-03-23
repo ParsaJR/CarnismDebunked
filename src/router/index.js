@@ -16,7 +16,7 @@ const router = createRouter({
     {
       path: '/general',
       name: 'General',
-      component: GeneralView
+      component: GeneralView,
     },
     {
       path: '/health',

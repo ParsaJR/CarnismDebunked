@@ -4,6 +4,7 @@ import FaqsComponent from '@/components/faqs-component.vue'
 import healthData from '@/data/argument/health.json'
 import ClipLoader from 'vue-spinner/src/ClipLoader.vue'
 const loaderSize = '75px'
+
 </script>
 
 <template>

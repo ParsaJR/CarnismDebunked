@@ -127,7 +127,7 @@ onMounted(() => {
       </div>
     </header>
     <main class="flex-grow flex">
-      <RouterView />
+        <RouterView />
     </main>
     <footer>
       <div class="container py-6 mx-auto">
