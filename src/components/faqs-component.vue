@@ -1,5 +1,5 @@
 <script setup>
-import { computed, ref, onMounted } from 'vue'
+import { computed, ref } from 'vue'
 import { marked } from 'marked'
 import axios from 'axios'
 import FaqFooter from './FaqFooter.vue'
