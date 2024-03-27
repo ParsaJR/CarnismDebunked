@@ -85,7 +85,7 @@ onMounted(() => {
             </li>
           </ul>
           <RouterLink to="About" class="text-3xl" @click="closeNav()">درباره ما</RouterLink>
-          <a href="#" class="text-3xl">تماس با ما</a>
+          <a href="mailto:hi@carnismdebunked.ir" class="text-3xl">تماس با ما</a>
         </div>
       </div>
     </header>
