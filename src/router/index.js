@@ -11,22 +11,42 @@ const router = createRouter({
     {
       path: '/',
       name: 'Home',
-      component: HomeView
+      component: HomeView,
+      meta:{
+        breadcrumb: [
+          {name: 'خانه'}
+        ]
+      }
     },
     {
       path: '/general',
       name: 'General',
       component: GeneralView,
+      meta:{
+        breadcrumb: [
+          {name: 'عمومی / اخلاقی'}
+        ]
+      }
     },
     {
       path: '/health',
       name: 'Health',
-      component: HealthView
+      component: HealthView,
+      meta:{
+        breadcrumb: [
+          {name: 'سلامتی'}
+        ]
+      }
     },
     {
       path: '/environment',
       name: 'Environment',
-      component: EnvView
+      component: EnvView,
+      meta:{
+        breadcrumb: [
+          {name: 'محیط زیست'}
+        ]
+      }
     },
     {
       path: '/about',
