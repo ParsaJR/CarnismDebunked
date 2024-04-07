@@ -1,6 +1,5 @@
 # CarnismDebunked
-
-This template should help get you started developing with Vue 3 in Vite.
+Frequently Asked Questions about Veganism
 
 ## Recommended IDE Setup
 
