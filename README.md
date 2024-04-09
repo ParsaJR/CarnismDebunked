@@ -1,13 +1,28 @@
-# CarnismDebunked
-Frequently Asked Questions about Veganism
+<br/>
+<p align="center">
+  <h3 align="center">CarnismDebunked</h3>
+
+  <p align="center">
+    Frequently Asked Questions about Veganism
+    <br/>
+    <br/>
+  </p>
+</p>
+
+
+
+## Built With
+
+Contents are loaded from a Json file. The answer to each question is parsed from the corresponding Markdown file , at runtime (route changes).
+
+* [Vue JS](https://vuejs.org/)
+* [Tailwind CSS](https://tailwindcss.com/)
+* [Marked](https://marked.js.org/)
+* [Vite](https://vitejs.dev/)
 
 ## Recommended IDE Setup
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+[VSCode](https://code.visualstudio.com/) + [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) .
 
 ## Project Setup
 
