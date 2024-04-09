@@ -14,8 +14,9 @@ const router = createRouter({
       component: HomeView,
       meta:{
         breadcrumb: [
-          {name: 'خانه'}
-        ]
+          {name: 'خانه'} 
+        ],
+        title: "خانه"
       }
     },
     {
@@ -25,8 +26,9 @@ const router = createRouter({
       meta:{
         breadcrumb: [
           {name: 'عمومی / اخلاقی'}
-        ]
-      }
+        ],
+        title: "عمومی"
+     }
     },
     {
       path: '/health',
@@ -35,7 +37,8 @@ const router = createRouter({
       meta:{
         breadcrumb: [
           {name: 'سلامتی'}
-        ]
+        ],
+        title: "سلامتی"
       }
     },
     {
@@ -45,15 +48,22 @@ const router = createRouter({
       meta:{
         breadcrumb: [
           {name: 'محیط زیست'}
-        ]
+        ],
+        title: "محیط زیست"
       }
     },
     {
       path: '/about',
       name: 'About',
-      component: AboutView
+      component: AboutView,
+      meta:{
+        title: "درباره ما"
+      }
     }
   ]
+})
+router.beforeEach((to) => {
+  document.title = to.meta?.title ?? "Default"
 })
 
 export default router
