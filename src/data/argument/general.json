@@ -1,12 +1,12 @@
 [
   {
     "id": 1,
-    "question": "حیوانات هم در طبیعت  را شکار میکنند",
+    "question": "حیوانات هم در طبیعت شکار میکنند",
     "answerFile": "answers/general/answer1.md"
   },
   {
     "id": 2,
-    "question": "انسان ها همه چیز خوار هستند ما دندان نیش داریم",
+    "question": "انسان ها همه چیز خوار هستند || ما دندان نیش داریم",
     "answerFile": "answers/general/answer2.md"
   },
   {
@@ -61,7 +61,7 @@
   },
   {
     "id": 14,
-    "question": "گیاه خواری جنبشی تشکیل شده از افراد Woke است",
+    "question": "گیاه خواری جنبشی از نوع Woke است",
     "answerFile": "answers/general/answer14.md"
   }
 ]
