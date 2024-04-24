@@ -134,7 +134,7 @@ onMounted(() => {
         <div class="mt-16 border-gray-800">
           <div class="text-center flex justify-between">
             <div>
-              <a href="https://github.com/">
+              <a href="https://github.com/ParsaJR/CarnismDebunked">
                 <img src="/src/assets/img/github-mark-white.svg" width="30" height="30" />
               </a>
             </div>
