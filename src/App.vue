@@ -20,6 +20,7 @@ function openNav() {
 
 function closeNav() {
   document.getElementById('myNav').style.height = '0%'
+  mobileDropdown.value = false
 }
 
 // Add event listener when the component is mounted
