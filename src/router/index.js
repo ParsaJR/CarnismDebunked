@@ -16,7 +16,7 @@ const router = createRouter({
         breadcrumb: [
           {name: 'خانه'} 
         ],
-        title: "خانه"
+        title: "خانه",
       }
     },
     {
@@ -63,7 +63,9 @@ const router = createRouter({
   ]
 })
 router.beforeEach((to) => {
-  document.title = to.meta?.title ?? "Default"
+  document.title = to.meta?.title ?? "CarnismDebunked"
+  const description = "سوالات متداول پیرامون گیاه خواری";
+  document.querySelector('head meta[name="description"]').setAttribute('content',description)
 })
 
 export default router
