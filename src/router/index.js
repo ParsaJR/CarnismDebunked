@@ -59,6 +59,11 @@ const router = createRouter({
       meta:{
         title: "درباره ما"
       }
+    },
+    {
+      path: '/:pathMatch(.*)*',
+      name: 'NotFound',
+      component: () => import('@/views/NotFound.vue')
     }
   ]
 })
