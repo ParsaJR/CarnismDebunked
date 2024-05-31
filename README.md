@@ -17,6 +17,7 @@ Contents are loaded from a Json file. The answer to each question is parsed from
 
 * [Vue JS](https://vuejs.org/)
 * [Tailwind CSS](https://tailwindcss.com/)
+* [HyperUI](https://www.hyperui.dev/)
 * [Marked](https://marked.js.org/)
 * [Vite](https://vitejs.dev/)
 
