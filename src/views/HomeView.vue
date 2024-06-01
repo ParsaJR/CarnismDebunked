@@ -2,7 +2,7 @@
 import VueWriter from 'vue-writer'
 const Sentences = [
   'سلاخیِ انسانی استدلال ها علیه گیاه خواری',
-  'اصلاح باورهای غلط برای تقویت گفتمان سازنده',
+  'تقویت گفتمان سازنده',
   'سوالات متداول درباره گیاه خواری'
 ]
 </script>
@@ -24,43 +24,46 @@ const Sentences = [
       <div class="mt-8 flex flex-wrap justify-center gap-4">
         <RouterLink
           class="block w-full rounded border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75 sm:w-auto transition"
-          to="general"
-        >
+          to="general">
           شروع کنیم
         </RouterLink>
 
         <RouterLink
           class="block w-full rounded border border-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto transition"
-          to="about"
-        >
+          to="about">
           درباره ما
         </RouterLink>
       </div>
     </div>
   </div>
 </template>
-<style lang="scss">
+<style>
 .cursor {
   animation:
     typing 2.5s steps(20, end),
     blink-caret 0.75s step-end infinite;
   border-right: 1px solid white;
 }
+
 /* typing effect */
 @keyframes typing {
   from {
     width: 0;
   }
+
   to {
     width: 100%;
   }
 }
+
 /* typewriter cursor effect */
 @keyframes blink-caret {
+
   from,
   to {
     border-color: transparent;
   }
+
   50% {
     border-color: white;
     font-size: 80%;

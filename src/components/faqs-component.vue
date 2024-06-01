@@ -39,7 +39,7 @@ const filteredFaqs = computed(() => {
       <input
         type="text"
         id="Search"
-        placeholder="جستجو سوال"
+        placeholder="جستجو"
         v-model="searchQuery"
         class="w-full rounded-md py-2.5 px-2.5 pe-10 shadow-sm border-gray-700 bg-gray-800 text-white sm:text-sm border"
       />
