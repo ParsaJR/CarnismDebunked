@@ -11,7 +11,7 @@ const Sentences = [
   <div class="mx-auto max-w-screen-xl px-4 flex-1 flex items-center">
     <div class="mx-auto max-w-3xl text-center">
       <h1
-        class="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-4xl font-extrabold text-transparent sm:text-7xl xs:text-5xl"
+        class="animate-gradient bg-300% bg-gradient-to-r from-orange-500 via-blue-500 to-green-400 bg-clip-text text-4xl font-extrabold text-transparent sm:text-7xl xs:text-5xl"
       >
         CarnismDebunked
       </h1>
@@ -43,6 +43,24 @@ const Sentences = [
     typing 2.5s steps(20, end),
     blink-caret 0.75s step-end infinite;
   border-right: 1px solid white;
+}
+.animate-gradient {
+  background-size: 300%;
+  -webkit-animation: animatedgradient 6s ease infinite alternate;
+  -moz-animation: animatedgradient 6s ease infinite alternate;
+  animation: animatedgradient 6s ease infinite alternate;
+}
+
+@keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 /* typing effect */
