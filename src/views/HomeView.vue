@@ -1,7 +1,7 @@
 <script setup>
 import VueWriter from 'vue-writer'
 const Sentences = [
-  'سوالات متداول درباره گیاه خواری',
+  'سوالات متداول پیرامون گیاه خواری',
   'تقویت گفتمان سازنده'
 ]
 </script>
