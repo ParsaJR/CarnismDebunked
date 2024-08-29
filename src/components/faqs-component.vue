@@ -5,10 +5,11 @@ import matter from "front-matter";
 import FaqFooter from './FaqFooter.vue'
 
 const FaqsCategory = defineProps(['data']);
-// const baseUrl = `/answers/${FaqsCategory.data}`;
+
 const faqs = ref([]);
 
 const searchQuery = ref('')
+
 // Computed property to filter FAQs based on the search query
 const filteredFaqs = computed(() => {
   const query = searchQuery.value.toLowerCase().trim()
@@ -30,11 +31,6 @@ async function fetchMarkdowns() {
   } catch (error) {
     console.error(error);
   }
-  // for (let index = 0; index < result.length; index++) {
-  //   const faqReq = await fetch(result[index].path);
-  //   const faqRes = await faqReq.text();
-  //   faqs.value.push(faqRes);
-  // }
 }
 
 async function ParseMarkdowns() {
