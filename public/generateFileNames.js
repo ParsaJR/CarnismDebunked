@@ -1,11 +1,11 @@
 import fs from 'fs'
 import path from 'path'
 
-const filesPaths = ['answers/general', 'answers/health', 'answers/environment']
+const filesPaths = ['public/answers/general', 'public/answers/health', 'public/answers/environment']
 const outputPaths = [
-  'answers/general/fileList.json',
-  'answers/health/fileList.json',
-  'answers/environment/fileList.json'
+  'public/answers/general/fileList.json',
+  'public/answers/health/fileList.json',
+  'public/answers/environment/fileList.json'
 ]
 
 function scanFolder(folder) {
