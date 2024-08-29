@@ -21,13 +21,20 @@ const filteredFaqs = computed(() => {
 })
 
 async function fetchMarkdowns() {
-  const Urls = await fetch(`/answers/${FaqsCategory.data}/fileList.json`);
-  const result = await Urls.json();
-  for (let index = 0; index < result.length; index++) {
-    const faqReq = await fetch(result[index].path);
-    const faqRes = await faqReq.text();
-    faqs.value.push(faqRes);
+  try {
+    const urlsResponse = await fetch(`/answers/${FaqsCategory.data}/fileList.json`);
+    const urls = await urlsResponse.json();
+    const fetchPromises = urls.map(url => fetch(url.path).then(response => response.text()));
+    const markdowns = await Promise.all(fetchPromises);
+    faqs.value.push(...markdowns)
+  } catch (error) {
+    console.error(error);
   }
+  // for (let index = 0; index < result.length; index++) {
+  //   const faqReq = await fetch(result[index].path);
+  //   const faqRes = await faqReq.text();
+  //   faqs.value.push(faqRes);
+  // }
 }
 
 async function ParseMarkdowns() {
@@ -35,8 +42,6 @@ async function ParseMarkdowns() {
     faqs.value[index] = matter(faqs.value[index])
     faqs.value[index].body = marked(faqs.value[index].body);
   }
-  console.log(faqs.value);
-  
 }
 
 await fetchMarkdowns();
