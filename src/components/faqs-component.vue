@@ -3,6 +3,7 @@ import { computed, ref } from 'vue'
 import { marked } from 'marked'
 import matter from "front-matter";
 import FaqFooter from './FaqFooter.vue'
+import FaqComponent from './faqComponent.vue';
 
 const FaqsCategory = defineProps(['data']);
 
@@ -63,8 +64,9 @@ await ParseMarkdowns();
         </button>
       </span>
     </div>
-    <div class="space-y-4" v-for="faq in filteredFaqs" :key="faq.id">
-      <details class="group [&_summary::-webkit-details-marker]:hidden">
+    <div class="space-y-4" v-for="(faq, index) in filteredFaqs" :key="index">
+      <FaqComponent :question=faq.attributes.question :answer=faq.body></FaqComponent>
+      <!-- <details class="group [&_summary::-webkit-details-marker]:hidden">
         <summary class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-600 p-4">
           <h4 class="font-medium select-none">{{ faq.attributes.question }}</h4>
 
@@ -76,31 +78,12 @@ await ParseMarkdowns();
         </summary>
         <p class="mt-4 px-4 leading-relaxed whitespace-pre-wrap" v-if="faq.body" v-html="faq.body">
         </p>
-      </details>
+      </details> -->
     </div>
   </section>
   <FaqFooter class="mt-20"></FaqFooter>
 </template>
 
 <style scoped>
-p :deep(a) {
-  text-decoration: none;
-  box-shadow:
-    inset 0 -2px 0 #42b883,
-    0 1px 0 #42b883;
-  transition: box-shadow 0.3s;
-  color: inherit;
-  overflow: hidden;
-  font-weight: bold;
-}
 
-p :deep(a:hover) {
-  box-shadow:
-    inset 0 -30px 0 #42b883,
-    0 1px 0 #42b883;
-}
-
-ul {
-  list-style: circle;
-}
 </style>
