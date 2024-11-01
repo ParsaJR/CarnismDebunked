@@ -7,7 +7,7 @@ import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
         <DisclosureButton class="bg-gray-600 p-4 rounded-lg gap-2 justify-between items-center flex w-full text-right"
             v-slot="{ open }">
             {{ props.question }}
-            <svg :class="open ? 'rotate-180 transform' : ''" class="h-5 w-5 transition"
+            <svg :class="open ? 'rotate-180 transform' : ''" class=" w-5 h-5 min-h-5 min-w-5 transition"
                 xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
                 <path fill="currentColor" fill-rule="evenodd"
                     d="M11.47 7.72a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 1 1-1.06 1.06L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06z"
