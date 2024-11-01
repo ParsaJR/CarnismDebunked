@@ -11,4 +11,4 @@ question: رژیم غذایی گیاهی ناسالم است؟
 [انجمن رژیم غذایی آمریکا]: https://pubmed.ncbi.nlm.nih.gov/27886704
 [سازمان بهداشت جهانی]: https://iris.who.int/bitstream/handle/10665/349086/WHO-EURO-2021-4007-43766-61591-eng.pdf?sequence=1
 [انجمن دیابت امریکا]: https://diabetes.org/food-nutrition/meal-planning/vegan-meal-planning-tips
-[انجمن قلب امریکا]: https://www.heart.org/en/news/2021/08/04/eating-a-plant-based-diet-at-any-age-may-lower-cardiovascular-risk
+[انجمن قلب امریکا]: https://www.heart.org/en/healthy-living/healthy-eating/eat-smart/nutrition-basics/how-does-plant-forward-eating-benefit-your-health
