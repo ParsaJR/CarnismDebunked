@@ -12,7 +12,7 @@
       <hr class="mt-5 w-3/12">
 
       <p class="mx-auto mt-5 max-w-xl sm:text-xl/relaxed">
-        سلاخیِ انسانیِ استدلال ها علیه وگانیسم
+        سوالات متداول و رایج پیرامون گیاه خواری
       </p>
     </div>
   </div>

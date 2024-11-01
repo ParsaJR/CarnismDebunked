@@ -8,7 +8,7 @@ defineOptions({
   <div v-bind="$attrs">
     <seperator></seperator>
     <p class="text-center pt-10 text-lg">
-      هنوز سوالی دارید؟
+      سوالی دارید؟
       <a href="mailto:hi@carnismdebunked.ir" class="underline transition hover:text-primary">برای ما ارسال کنید</a>
     </p>
   </div>
