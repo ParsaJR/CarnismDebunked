@@ -1,7 +1,6 @@
 <script setup>
 import ArgIntro from '@/components/ArgIntro.vue'
 import FaqsComponent from '@/components/faqs-component.vue'
-import envData from '@/data/argument/environment.json'
 import ClipLoader from 'vue-spinner/src/ClipLoader.vue'
 const loaderSize = '75px'
 </script>

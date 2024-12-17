@@ -12,10 +12,12 @@
           مختلف به چالش می‌کشند.
           این وب سایت میکوشد تا به استدلال های پرتکرار پیرامون این موضوع پاسخ دهد.
           <br>
-          ایده این وب سایت از
-          <a class="underline transition hover:text-primary" href="https://www.carnismdebunked.com/">CarnismDebunked</a>
-          گرفته شده است .
-        </h3>
+            کلمه Carnism به معنا یک ایدئولوژی نامرئی است که افراد را به خوردنِ برخی حیوانات خاص وادار میکند. 
+            <br>
+            این مفهوم اولین بار توسط 
+            <a class="underline transition hover:text-primary" href="https://www.amazon.com/Love-Dogs-Pigs-Wear-Cows/dp/1573245054">ملانی جوی</a>
+          ابداع شد.  
+          </h3>
       </section>
     </div>
   </div>
