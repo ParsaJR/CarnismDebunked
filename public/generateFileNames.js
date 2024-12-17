@@ -1,6 +1,9 @@
 import fs from 'fs'
 import path from 'path'
 
+// the purpose of this file is to generate filenames from markdown files in public folder.
+// couse we need them in order to fetch them.   
+
 const filesPaths = ['public/answers/general', 'public/answers/health', 'public/answers/environment']
 const outputPaths = [
   'public/answers/general/fileList.json',
