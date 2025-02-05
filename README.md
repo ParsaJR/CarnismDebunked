@@ -11,13 +11,15 @@
 
 
 
+## How this thing work?
+
+The content is loaded from a JSON file, and the answer to each question is parsed from the corresponding Markdown file at runtime as the route changes.
+
 ## Built With
-
-Contents are loaded from a Json file. The answer to each question is parsed from the corresponding Markdown file , at runtime (route changes).
-
 * [Vue JS](https://vuejs.org/)
 * [Tailwind CSS](https://tailwindcss.com/)
 * [HyperUI](https://www.hyperui.dev/)
+* [HeadlessUI](https://headlessui.com/)
 * [Marked](https://marked.js.org/)
 * [Vite](https://vitejs.dev/)
 
