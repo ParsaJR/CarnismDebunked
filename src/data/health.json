@@ -1,0 +1,44 @@
+[
+  {
+    "filename": "claim1.md",
+    "frontmatter": {
+      "claim": "رژیم غذایی گیاهی ناسالم است؟"
+    },
+    "body": "<p>جواب کوتاه به این سوال &quot;خیر&quot; است. رژیم غذایی گیاهی، یکی از رژیم های غذایی تایید شده توسط بسیاری از انجمن های تغذیه و سازمان های غذایی معتبر است.\nبرخی از این سازمان ها عبارتند از :\n<a href=\"https://pubmed.ncbi.nlm.nih.gov/27886704\">انجمن رژیم غذایی آمریکا</a> - <a href=\"https://iris.who.int/bitstream/handle/10665/349086/WHO-EURO-2021-4007-43766-61591-eng.pdf?sequence=1\">سازمان بهداشت جهانی</a> - <a href=\"https://diabetes.org/food-nutrition/meal-planning/vegan-meal-planning-tips\">انجمن دیابت امریکا</a> - <a href=\"https://www.heart.org/en/healthy-living/healthy-eating/eat-smart/nutrition-basics/how-does-plant-forward-eating-benefit-your-health\">انجمن قلب امریکا</a></p>\n<p>این تاییدات نشان میدهند که رژیم گیاه‌خواری به عنوان یک گزینه سالم و متوازن برای رژیم غذایی شناخته شده است.\nبا این حال، همواره مهمترین کار این است که قبل از تغییر در رژیم خود، مطالعه کافی داشته باشید یا با متخصصین مشورت داشته باشید. زیرا رژیم گیاهی نیز همانند سایر رژیم های غذایی، ممکن است منجر به بیماری هایی شود. برای مثال، شما باید مطمئن شوید که تنوع خوبی را در رژیم غذایی خود رعایت میکنید و جایگزین های مناسبی از نظر ارزش غذایی برای محصولات جانوری دارید.</p>\n"
+  },
+  {
+    "filename": "claim2.md",
+    "frontmatter": {
+      "claim": "پروتئین چطور ؟"
+    },
+    "body": "<p>منابع پروتئینی گیاهی بسیار متنوع هستند و می‌توانند نیازهای پروتئینی افراد گیاه‌خوار را برطرف کنند.\n<a href=\"https://www.healthline.com/nutrition/soybeans\">سویا</a> ( تمامی منابع برپایه دانه سویا )، <a href=\"https://www.myfooddata.com/articles/beans-legumes-highest-protein.php\">حبوبات</a>، <a href=\"https://www.myfooddata.com/articles/grains-high-in-protein.php\">غلات</a> و <a href=\"https://www.myfooddata.com/articles/high-protein-nuts.php\">آجیل و دانه ها</a> چند نمونه از منابع پروتئینی گیاهی قوی هستند.</p>\n"
+  },
+  {
+    "filename": "claim3.md",
+    "frontmatter": {
+      "claim": "کلسیم چطور؟"
+    },
+    "body": "<p>منابع کلسیم گیاهی متنوع هستند و می‌توانند نیاز کلسیم افراد گیاه‌خوار را برطرف کنند.\n<a href=\"https://www.healthline.com/nutrition/vegan-calcium-sources\">سویا</a> (مواد غذایی برپایه دانه سویا مثل توفو)، <a href=\"https://www.botanical-online.com/en/food/calcium-legumes\">حبوبات</a> و <a href=\"https://tools.myfooddata.com/nutrient-ranking-tool/calcium/nuts-and-seeds/highest\">مغز و دانه ها</a> چند نمونه از منابع کلسیم گیاهی هستند.</p>\n"
+  },
+  {
+    "filename": "claim4.md",
+    "frontmatter": {
+      "claim": "اهن چطور؟"
+    },
+    "body": "<p>منابع کلسیم گیاهی متنوع <a href=\"https://www.healthline.com/nutrition/iron-rich-plant-foods\">هستند</a> و می‌توانند نیاز آهن‌ افراد گیاه‌خوار را برطرف کنند.\nحبوبات و سبزیجات نمونه هایی از منابع آهن گیاهی هستند.</p>\n"
+  },
+  {
+    "filename": "claim5.md",
+    "frontmatter": {
+      "claim": "ویتامین B12 چطور؟"
+    },
+    "body": "<p>ویتامین b12 برای سلامت بدن ما ضروری است، اما این ویتامین در غذاهای گیاهی یافت نمی‌شود. البته ویتامین b12 توسط حیوانات هم تولید نمیشود بلکه توسط باکتری های خاصی تولید میشوند که در خاک وجود <a href=\"https://pubmed.ncbi.nlm.nih.gov/29216732\">دارند</a>.\nمکمل های غذایی و غذا های غنی شده، تنها منابع قابل اطمینان از b12 برای گیاه خواران هستند.</p>\n"
+  },
+  {
+    "filename": "claim6.md",
+    "frontmatter": {
+      "claim": "امگا ۳ چطور؟"
+    },
+    "body": "<p>منابع امگا 3 گیاهی متنوع هستند و می‌توانند نیاز افراد گیاه‌خوار را برطرف کنند.\nدانه چیا، کلم بروکسل و گردو چند نمونه از منابع امگا 3 گیاهی <a href=\"https://www.healthline.com/nutrition/7-plant-sources-of-omega-3s\">هستند</a>.</p>\n"
+  }
+]
