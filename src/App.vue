@@ -22,7 +22,6 @@ function closeNav() {
   document.getElementById('myNav').style.height = '0%'
   mobileDropdown.value = false
 }
-
 // Add event listener when the component is mounted
 onMounted(() => {
   document.addEventListener('click', handleClickOutside)
@@ -72,7 +71,7 @@ onMounted(() => {
         <div class="overlay-content">
           <RouterLink to="/" class="text-3xl" @click="closeNav()">خانه</RouterLink>
           <a class="text-3xl cursor-pointer" @click="mobileDropdown = !mobileDropdown"
-            >استدلال ها +</a
+            >طبقه بندی +</a
           >
           <ul class="bg-[#414141] p-6 list-none" :class="{ hidden: mobileDropdown == false }">
             <li class="text-2xl my-2">
@@ -101,7 +100,7 @@ onMounted(() => {
             to="/"
             v-on:click="dropDown = !dropDown"
           >
-            + استدلال ها</a
+            + طبقه بندی</a
           >
           <div class="dropdown-content rounded-2xl" :class="dropdownClass">
             <RouterLink

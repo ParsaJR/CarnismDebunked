@@ -1,48 +1,25 @@
-<script setup>
-import { computed, ref } from 'vue'
-import { marked } from 'marked'
-import matter from "front-matter";
+<script setup lang="ts">
+import { computed, ref, type Ref } from 'vue'
 import FaqFooter from './FaqFooter.vue'
 import FaqComponent from './faqComponent.vue';
-
-const FaqsCategory = defineProps(['data']);
-
-const faqs = ref([]);
+import type { Markdown } from '@parsajr/mdcompiler'
+const props = defineProps(['data']);
 
 const searchQuery = ref('')
 
+interface Frontmatter {
+  claim: string
+}
+
+// let's type the frontmatter.
+interface ExtendedMD extends Markdown {
+  frontmatter: Frontmatter
+}
+const data: ExtendedMD[] = props.data
 // Computed property to filter FAQs based on the search query
 const filteredFaqs = computed(() => {
-  const query = searchQuery.value.toLowerCase().trim()
-
-  if (!query) {
-    return faqs.value
-  }
-
-  return faqs.value.filter((faq) => faq.attributes.question?.toLowerCase().includes(query));
+  return data.filter(markdown => markdown.frontmatter.claim.includes(searchQuery.value))
 })
-
-async function fetchMarkdowns() {
-  try {
-    const urlsResponse = await fetch(`/answers/${FaqsCategory.data}/fileList.json`);
-    const urls = await urlsResponse.json();
-    const fetchPromises = urls.map(url => fetch(url.path).then(response => response.text()));
-    const markdowns = await Promise.all(fetchPromises);
-    faqs.value.push(...markdowns)
-  } catch (error) {
-    console.error(error);
-  }
-}
-
-async function ParseMarkdowns() {
-  for (let index = 0; index < faqs.value.length; index++) {
-    faqs.value[index] = matter(faqs.value[index])
-    faqs.value[index].body = marked(faqs.value[index].body);
-  }
-}
-
-await fetchMarkdowns();
-await ParseMarkdowns();
 </script>
 
 <template>
@@ -65,12 +42,10 @@ await ParseMarkdowns();
       </span>
     </div>
     <div class="space-y-4" v-for="(faq, index) in filteredFaqs" :key="index">
-      <FaqComponent :question=faq.attributes.question :answer=faq.body></FaqComponent>
+      <FaqComponent :question=faq.frontmatter.claim :answer=faq.body></FaqComponent>
     </div>
   </section>
   <FaqFooter class="mt-20"></FaqFooter>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

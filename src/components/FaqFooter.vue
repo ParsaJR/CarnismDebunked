@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import seperator from './separator-component.vue'
 defineOptions({
   inheritAttrs: false

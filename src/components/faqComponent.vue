@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 const props = defineProps(['question', 'answer']);
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
 </script>
